@@ -1,9 +1,9 @@
 package com.blueo.common.test;
 
 import com.blueo.common.CodeGenerator;
-import com.blueo.csv.test.Person;
+import com.blueo.common.Person;
 
-public class Tester {
+public class CodeGeneratorTester {
 
 	public static void main(String[] args) {
 		CodeGenerator.generateSetting(Person.class);

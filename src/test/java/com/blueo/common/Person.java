@@ -1,4 +1,4 @@
-package com.blueo.csv.test;
+package com.blueo.common;
 
 public class Person {
 	private String name;
