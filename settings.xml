@@ -1,0 +1,13 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                          http://maven.apache.org/xsd/settings-1.0.0.xsd">
+	<servers>
+		<server>
+			<id>bintray-panxy1213</id>
+			<username>panxy1213</username>
+			<password>8e741c51d994055adff6efb55ae3a44ecde68df9</password>
+		</server>
+	</servers>
+
+</settings>
