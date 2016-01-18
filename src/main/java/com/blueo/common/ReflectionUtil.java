@@ -29,7 +29,6 @@ public class ReflectionUtil {
 	 * When {@code Type} initialized with a value of an object, its fully
 	 * qualified class name will be prefixed with this.
 	 * 
-	 * @see {@link ReflectionUtil#getClassName(Type)}
 	 */
 	private static final String TYPE_CLASS_NAME_PREFIX = "class ";
 	private static final String TYPE_INTERFACE_NAME_PREFIX = "interface ";
@@ -49,7 +48,6 @@ public class ReflectionUtil {
 	 *            the {@code Type} value whose class name is needed.
 	 * @return {@code String} class name of the invoked {@code type}.
 	 * 
-	 * @see {@link ReflectionUtil#getClass()}
 	 */
 	public static String getClassName(Type type) {
 		if (type == null) {
@@ -75,7 +73,6 @@ public class ReflectionUtil {
 	 * @throws ClassNotFoundException
 	 *             if the class cannot be located.
 	 * 
-	 * @see {@link ReflectionUtil#getClassName(Type)}
 	 */
 	public static Class<?> getClass(Type type) throws ClassNotFoundException {
 		String className = getClassName(type);
@@ -106,7 +103,6 @@ public class ReflectionUtil {
 	 * @throws IllegalAccessException
 	 *             if the class or its nullary constructor is not accessible.
 	 * 
-	 * @see {@link Class#newInstance()}
 	 */
 	public static Object newInstance(Type type) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		Class<?> clazz = getClass(type);
@@ -126,8 +122,6 @@ public class ReflectionUtil {
 	 * @return an array of {@code Type} objects representing the actual type
 	 *         arguments to this object.
 	 * 
-	 * @see {@link Class#getGenericSuperclass()}
-	 * @see {@link ParameterizedType#getActualTypeArguments()}
 	 */
 	public static Type[] getParameterizedTypes(Object object) {
 		Type superclassType = object.getClass().getGenericSuperclass();
@@ -161,7 +155,6 @@ public class ReflectionUtil {
 	 *             class
 	 *             </ul>
 	 * 
-	 * @see {@link Class#getConstructor(Class...)}
 	 */
 	public static boolean hasDefaultConstructor(Class<?> clazz) throws SecurityException {
 		Class<?>[] empty = {};
@@ -187,8 +180,6 @@ public class ReflectionUtil {
 	 * @return the {@code Class} object representing the type of given field
 	 *         name.
 	 * 
-	 * @see {@link Class#getDeclaredFields()}
-	 * @see {@link Field#getType()}
 	 */
 	public static Class<?> getFieldClass(Class<?> clazz, String name) {
 		if (clazz == null || name == null || name.isEmpty()) {
@@ -222,8 +213,6 @@ public class ReflectionUtil {
 	 * @return the {@code Class} object representing the return type of the
 	 *         given method name.
 	 * 
-	 * @see {@link Class#getDeclaredMethods()}
-	 * @see {@link Method#getReturnType()}
 	 */
 	public static Class<?> getMethodReturnType(Class<?> clazz, String name) {
 		if (clazz == null || name == null || name.isEmpty()) {
@@ -261,7 +250,6 @@ public class ReflectionUtil {
 	 *             name, or the specified class object does not represent an
 	 *             enum type.
 	 * 
-	 * @see {@link Enum#valueOf(Class, String)}
 	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static Object getEnumConstant(Class<?> clazz, String name) {
