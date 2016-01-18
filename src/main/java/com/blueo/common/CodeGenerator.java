@@ -10,7 +10,7 @@ import org.springframework.util.StringUtils;
 import com.google.common.base.Defaults;
 import com.google.common.base.Objects;
 
-public class CodeGenerator {
+public abstract class CodeGenerator {
 	
 	public static void generateSetting(Class<?> clazz) {
 		generateSetting(clazz, (String)null);
