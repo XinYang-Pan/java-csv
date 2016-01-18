@@ -2,14 +2,14 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.blueo</groupId>
 	<artifactId>java-csv</artifactId>
-	<version>1.7-SNAPSHOT</version>
+	<version>2.2-SNAPSHOT</version>
 	<!-- <version>1.3.1-SNAPSHOT</version> -->
 	<name>java csv helper</name>
 	<description>java csv helper</description>
 	<scm>
 <!-- 		<connection>https://github.com/Sean-PAN2014/java-csv.git</connection> -->
 <!-- 		<developerConnection>https://github.com/Sean-PAN2014/java-csv.git</developerConnection> -->
-		<url>https://github.com/Sean-PAN2014/java-csv.git</url>
+		<url>https://github.com/Sean-PAN2014/</url>
 		<connection>scm:git:https://github.com/Sean-PAN2014/java-csv.git</connection>
 	  <tag>HEAD</tag>
   </scm>
